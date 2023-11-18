@@ -33,7 +33,7 @@ html {
   -moz-tab-size: 4; /* 3 */
   -o-tab-size: 4;
      tab-size: 4; /* 3 */
-  font-family: proxima-nova, ui-sans-serif; /* 4 */
+  font-family: Lato, sans-serif; /* 4 */
   font-feature-settings: normal; /* 5 */
 }
 /*
@@ -413,9 +413,6 @@ video {
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
-.col-span-3 {
-  grid-column: span 3 / span 3;
-}
 .m-3 {
   margin: 0.75rem;
 }
@@ -438,6 +435,9 @@ video {
 .mb-1 {
   margin-bottom: 0.25rem;
 }
+.mb-4 {
+  margin-bottom: 1rem;
+}
 .mb-5p {
   margin-bottom: 5%;
 }
@@ -446,9 +446,6 @@ video {
 }
 .ml-0 {
   margin-left: 0px;
-}
-.mt-10p {
-  margin-top: 10%;
 }
 .block {
   display: block;
@@ -462,8 +459,8 @@ video {
 .h-full {
   height: 100%;
 }
-.min-h-50 {
-  min-height: 50vh;
+.min-h-70 {
+  min-height: 70vh;
 }
 .w-min {
   width: -moz-min-content;
@@ -529,9 +526,6 @@ video {
 .border-2 {
   border-width: 2px;
 }
-.border-b-2 {
-  border-bottom-width: 2px;
-}
 .border-t-2 {
   border-top-width: 2px;
 }
@@ -545,18 +539,51 @@ video {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
+.border-gray-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(156 163 175 / var(--tw-border-opacity));
+}
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
-.bg-\[url\(\'\/images\/moody-1\.jpg\'\)\] {
-  background-image: url('/images/moody-1.jpg');
+.bg-gray-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+.bg-blue-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+}
+.bg-gray-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
+}
+.bg-gray-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
+}
+.bg-gray-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+}
+.bg-gray-900\/10 {
+  background-color: rgb(17 24 39 / 0.1);
+}
+.bg-gray-900\/40 {
+  background-color: rgb(17 24 39 / 0.4);
+}
+.bg-\[url\(\'https\:\/\/source\.unsplash\.com\/body-of-water-near-mountain-view-r6FU8zqrgdM\'\)\] {
+  background-image: url('https://source.unsplash.com/body-of-water-near-mountain-view-r6FU8zqrgdM');
 }
 .bg-\[url\(\'\/images\/moody-8\.jpg\'\)\] {
   background-image: url('/images/moody-8.jpg');
 }
 .bg-\[url\(\'\/images\/moody-13\.jpg\'\)\] {
   background-image: url('/images/moody-13.jpg');
+}
+.bg-\[url\(\'https\:\/\/source\.unsplash\.com\/ice-hockey-players-on-ice-hockey-field-W7t3cNm8LXk\'\)\] {
+  background-image: url('https://source.unsplash.com/ice-hockey-players-on-ice-hockey-field-W7t3cNm8LXk');
 }
 .bg-cover {
   background-size: cover;
@@ -630,6 +657,13 @@ video {
 .text-center {
   text-align: center;
 }
+.font-serif {
+  font-family: Playfair Display, serif;
+}
+.text-sm {
+  font-size: 0.875rem;;
+  line-height: 1.2;
+}
 .text-3xl {
   font-size: 1.875rem;
   line-height: 1;
@@ -644,10 +678,6 @@ video {
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
-}
-.text-sm {
-  font-size: 0.875rem;;
-  line-height: 1.2;
 }
 .font-bold {
   font-weight: 700;
@@ -676,6 +706,13 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.text-gray-200 {
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
+}
+.bg-blend-multiply {
+  background-blend-mode: multiply;
 }
 
 /* Custom CSS */
@@ -740,6 +777,10 @@ a {
     font-size: 2.25rem;
     line-height: 1;
   }
+  .sm\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 1;
+  }
   .sm\:leading-\[0\.45\] {
     line-height: 0.45;
   }
@@ -757,11 +798,11 @@ a {
     --tw-rotate: 180deg;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
-  .md\:grid-cols-6 {
-    grid-template-columns: repeat(6, minmax(0, 1fr));
+  .md\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
-  .md\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -771,9 +812,6 @@ a {
   }
   .md\:justify-start {
     justify-content: flex-start;
-  }
-  .md\:justify-between {
-    justify-content: space-between;
   }
   .md\:gap-5 {
     gap: 1.25rem;
@@ -786,6 +824,10 @@ a {
   }
   .md\:text-6xl {
     font-size: 3.75rem;
+    line-height: 1;
+  }
+  .md\:text-5xl {
+    font-size: 3rem;
     line-height: 1;
   }
   .md\:leading-\[0\.45\] {
