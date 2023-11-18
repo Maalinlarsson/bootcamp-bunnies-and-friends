@@ -474,6 +474,9 @@ video {
 .min-h-70 {
   min-height: 70vh;
 }
+.min-h-80 {
+  min-height: 80vh;
+}
 .w-min {
   width: -moz-min-content;
   width: min-content;
@@ -703,6 +706,9 @@ video {
 }
 .p-2 {
   padding: 0.5rem;
+}
+.p-10p {
+  padding: 10%;
 }
 .px-5p {
   padding-left: 5%;
