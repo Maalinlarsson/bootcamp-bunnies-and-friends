@@ -413,6 +413,9 @@ video {
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
+.col-span-3 {
+  grid-column: span 3 / span 3;
+}
 .m-3 {
   margin: 0.75rem;
 }
@@ -447,6 +450,12 @@ video {
 .ml-0 {
   margin-left: 0px;
 }
+.mt-2 {
+  margin-top: 0.5rem;
+}
+.mt-4 {
+  margin-top: 1rem;
+}
 .block {
   display: block;
 }
@@ -455,6 +464,9 @@ video {
 }
 .grid {
   display: grid;
+}
+.aspect-square {
+  aspect-ratio: 1 / 1;
 }
 .h-full {
   height: 100%;
@@ -481,6 +493,15 @@ video {
 .grow {
   flex-grow: 1;
 }
+.grow-\[2\] {
+  flex-grow: 2;
+}
+.basis-\[1\] {
+  flex-basis: 1;
+}
+.basis-\[1px\] {
+  flex-basis: 1px;
+}
 .rotate-180 {
   --tw-rotate: 180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -491,11 +512,17 @@ video {
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
+.flex-col {
+  flex-direction: column;
+}
 .items-end {
   align-items: flex-end;
 }
 .items-center {
   align-items: center;
+}
+.justify-end {
+  justify-content: flex-end;
 }
 .justify-center {
   justify-content: center;
@@ -515,10 +542,32 @@ video {
 .gap-5 {
   gap: 1.25rem;
 }
+.gap-x-10 {
+  -moz-column-gap: 2.5rem;
+       column-gap: 2.5rem;
+}
+.gap-y-1 {
+  row-gap: 0.25rem;
+}
+.gap-y-2 {
+  row-gap: 0.5rem;
+}
+.gap-y-3 {
+  row-gap: 0.75rem;
+}
 .space-x-9 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(2.25rem * var(--tw-space-x-reverse));
   margin-left: calc(2.25rem * calc(1 - var(--tw-space-x-reverse)));
+}
+.rounded-full {
+  border-radius: 9999px;
+}
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
+.rounded-\[3rem\] {
+  border-radius: 3rem;
 }
 .border {
   border-width: 1px;
@@ -542,6 +591,18 @@ video {
 .border-gray-400 {
   --tw-border-opacity: 1;
   border-color: rgb(156 163 175 / var(--tw-border-opacity));
+}
+.border-gray-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
+}
+.border-pink-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(236 72 153 / var(--tw-border-opacity));
+}
+.border-pink-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(244 114 182 / var(--tw-border-opacity));
 }
 .bg-black {
   --tw-bg-opacity: 1;
@@ -577,6 +638,14 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
+.bg-pink-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 168 212 / var(--tw-bg-opacity));
+}
+.bg-pink-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 207 232 / var(--tw-bg-opacity));
+}
 .bg-\[url\(\'https\:\/\/source\.unsplash\.com\/body-of-water-near-mountain-view-r6FU8zqrgdM\'\)\] {
   background-image: url('https://source.unsplash.com/body-of-water-near-mountain-view-r6FU8zqrgdM');
 }
@@ -589,11 +658,35 @@ video {
 .bg-\[url\(\'https\:\/\/source\.unsplash\.com\/ice-hockey-players-on-ice-hockey-field-W7t3cNm8LXk\'\)\] {
   background-image: url('https://source.unsplash.com/ice-hockey-players-on-ice-hockey-field-W7t3cNm8LXk');
 }
+.bg-\[url\(\'https\:\/\/source\.unsplash\.com\/white-and-gray-rabbit-on-black-table-fLj1a73qCB0\'\)\] {
+  background-image: url('https://source.unsplash.com/white-and-gray-rabbit-on-black-table-fLj1a73qCB0');
+}
+.bg-\[url\(\'https\:\/\/images\.unsplash\.com\/photo-1555881421-f79a3858ebcf\?w\=900\&auto\=format\&fit\=crop\&q\=60\&ixlib\=rb-4\.0\.3\&ixid\=M3wxMjA3fDB8MHxzZWFyY2h8NDN8fGJ1bm55fGVufDB8fDB8fHww\'\)\] {
+  background-image: url('https://images.unsplash.com/photo-1555881421-f79a3858ebcf?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDN8fGJ1bm55fGVufDB8fDB8fHww');
+}
+.bg-\[url\(\'https\:\/\/images\.unsplash\.com\/photo-1636096034623-1d3254303038\?q\=80\&w\=2498\&auto\=format\&fit\=crop\&ixlib\=rb-4\.0\.3\&ixid\=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA\%3D\%3D\'\)\] {
+  background-image: url('https://images.unsplash.com/photo-1636096034623-1d3254303038?q=80&w=2498&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+.bg-\[url\(\'https\:\/\/images\.unsplash\.com\/photo-1537330937885-671c6d316721\?w\=900\&auto\=format\&fit\=crop\&q\=60\&ixlib\=rb-4\.0\.3\&ixid\=M3wxMjA3fDB8MHxzZWFyY2h8NTV8fGJ1bm55fGVufDB8fDB8fHww\'\)\] {
+  background-image: url('https://images.unsplash.com/photo-1537330937885-671c6d316721?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTV8fGJ1bm55fGVufDB8fDB8fHww');
+}
+.bg-\[url\(\'https\:\/\/images\.unsplash\.com\/photo-1529040181623-e04ebc611e25\?w\=900\&auto\=format\&fit\=crop\&q\=60\&ixlib\=rb-4\.0\.3\&ixid\=M3wxMjA3fDB8MHxzZWFyY2h8NTl8fGJ1bm55fGVufDB8fDB8fHww\'\)\] {
+  background-image: url('https://images.unsplash.com/photo-1529040181623-e04ebc611e25?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTl8fGJ1bm55fGVufDB8fDB8fHww');
+}
+.bg-\[url\(\'https\:\/\/images\.unsplash\.com\/photo-1578164252938-1da0cd4caa30\?w\=900\&auto\=format\&fit\=crop\&q\=60\&ixlib\=rb-4\.0\.3\&ixid\=M3wxMjA3fDB8MHxzZWFyY2h8Njh8fGJ1bm55fGVufDB8fDB8fHww\'\)\] {
+  background-image: url('https://images.unsplash.com/photo-1578164252938-1da0cd4caa30?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njh8fGJ1bm55fGVufDB8fDB8fHww');
+}
 .bg-cover {
   background-size: cover;
 }
 .bg-center {
   background-position: center;
+}
+.bg-bottom {
+  background-position: bottom;
+}
+.bg-left {
+  background-position: left;
 }
 .object-cover {
   -o-object-fit: cover;
@@ -671,6 +764,9 @@ video {
 .font-serif {
   font-family: Playfair Display, serif;
 }
+.font-sans {
+  font-family: Lato, sans-serif;
+}
 .text-sm {
   font-size: 0.875rem;;
   line-height: 1.2;
@@ -729,6 +825,34 @@ video {
 .text-blue-500 {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+.text-pink-500 {
+  --tw-text-opacity: 1;
+  color: rgb(236 72 153 / var(--tw-text-opacity));
+}
+.text-pink-200 {
+  --tw-text-opacity: 1;
+  color: rgb(251 207 232 / var(--tw-text-opacity));
+}
+.text-pink-300 {
+  --tw-text-opacity: 1;
+  color: rgb(249 168 212 / var(--tw-text-opacity));
+}
+.text-pink-400 {
+  --tw-text-opacity: 1;
+  color: rgb(244 114 182 / var(--tw-text-opacity));
+}
+.text-gray-300 {
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+.text-gray-400 {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 .bg-blend-multiply {
   background-blend-mode: multiply;
