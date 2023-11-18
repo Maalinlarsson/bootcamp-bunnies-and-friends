@@ -573,6 +573,10 @@ video {
 .bg-gray-900\/40 {
   background-color: rgb(17 24 39 / 0.4);
 }
+.bg-gray-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
 .bg-\[url\(\'https\:\/\/source\.unsplash\.com\/body-of-water-near-mountain-view-r6FU8zqrgdM\'\)\] {
   background-image: url('https://source.unsplash.com/body-of-water-near-mountain-view-r6FU8zqrgdM');
 }
@@ -627,6 +631,10 @@ video {
   padding-left: 15%;
   padding-right: 15%;
 }
+.py-5p {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
 .pt-0 {
   padding-top: 0px;
 }
@@ -650,6 +658,9 @@ video {
 }
 .pb-10p {
   padding-bottom: 10%;
+}
+.pb-0 {
+  padding-bottom: 0px;
 }
 .text-left {
   text-align: left;
@@ -710,6 +721,14 @@ video {
 .text-gray-200 {
   --tw-text-opacity: 1;
   color: rgb(229 231 235 / var(--tw-text-opacity));
+}
+.text-blue-300 {
+  --tw-text-opacity: 1;
+  color: rgb(147 197 253 / var(--tw-text-opacity));
+}
+.text-blue-500 {
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 .bg-blend-multiply {
   background-blend-mode: multiply;
